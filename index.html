@@ -20,21 +20,27 @@
     body {
       background-color: #2f2a2e;
       font-family: "Poppins", sans-serif;
-      color: #2f2a2e;
+      color: #5a585c;
       background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/726/original/nc2.png?1701587702");
       background-repeat: no-repeat;
       background-size: cover;
     }
-
+    header {
+      height: 13vh;
+    }
     h1 {
       text-align: center;
       font-family: "Fondamento", cursive;
       font-size: 77px;
+      color: #3b383d;
     }
     h2 {
-      text-align: right;
       font-family: "Tangerine", cursive;
       font-size: 33px;
+      position: relative;
+      top: -65px;
+      left: 500px;
+      color: #5a585c;
     }
     img {
       border: none;
@@ -45,8 +51,12 @@
     img :hover {
       transform: scale(1.5);
     }
+    hr {
+      border: 1px solid #a9a9a9;
+      border-radius: 50px;
+    }
     a {
-      color: #d70106;
+      color: #e30007;
     }
 
     footer {
@@ -56,7 +66,7 @@
     }
 
     .container {
-      background-color: #dbd8e3;
+      background-color: #a1a0a0;
       max-width: 950px;
       margin: 45px auto;
       box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -65,8 +75,19 @@
     }
 
     .the {
-      font-size: 22px;
+      font-size: 30px;
+      position: relative;
+      top: -60px;
+      left: 30px;
     }
+
+    .star-icon {
+      font-size: 50px;
+      position: relative;
+      top: -40px;
+      left: -20px;
+    }
+
     .synopsis {
       text-align: center;
       padding: 20px 0;
@@ -84,13 +105,23 @@
     .grid-two {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 10px;
       padding: 20px 0;
     }
-
-    .author-headshot {
-      width: 150px;
-      text-decoration: none;
+    .emphasis {
+      font-size: 22px;
+    }
+    .my-thoughts {
+      text-align: center;
+    }
+    .my-thoughts-icon {
+      font-size: 44px;
+    }
+    .more-info {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 70px 20px 0 20px;
     }
     .instagram-icon {
       width: 50px;
@@ -100,11 +131,25 @@
       width: 50px;
       text-decoration: none;
     }
+    .author-headshot {
+      width: 100px;
+      text-decoration: none;
+      position: relative;
+      top: -40px;
+      left: 10px;
+    }
+    .close {
+      text-align: center;
+      padding: 20px;
+    }
   </style>
   <body>
     <div class="container">
       <header>
-        <h1><span class="the">THE</span> Night Circus</h1>
+        <h1>
+          <span class="the">THE</span> Night Circus
+          <span class="star-icon">✶</span>
+        </h1>
         <h2>written by Erin Morgenstern</h2>
       </header>
       <img
@@ -124,10 +169,10 @@
           </p>
           <div class="grid-one">
             <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/738/original/nc13.png?1701589959"
-              alt="characters in color"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/735/original/nc10.jpeg?1701589927"
+              alt="characters facing away from each other"
             />
-            <br /><br /><br /><br />
+            <br /><br />
             But behind the scenes, a fierce competition is underway—a duel
             between two young magicians, Celia and Marco, who have been trained
             since childhood expressly for this purpose by their mercurial
@@ -137,39 +182,46 @@
             standing, and the circus is but the stage for a remarkable battle of
             imagination and will.
             <br /><br />
+          </div>
+          <div class="grid-two">
+            <br /><br />
             Despite themselves, however, Celia and Marco tumble headfirst into
             love—a deep, magical love that makes the lights flicker and the room
             grow warm whenever they so much as brush hands.
-          </div>
-          <div class="grid-two">
-            <br /><br /><br />
+            <br />
+            <br />
             True love or not, the game must play out, and the fates of everyone
             involved, from the cast of extraordinary circus per­formers to the
             patrons, hang in the balance, suspended as precariously as the
-            daring acrobats overhead.
+            daring acrobats overhead...
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/736/original/nc11.jpeg?1701589939"
               alt="characters facing each other"
             />
           </div>
         </div>
-        Insert text here about personal experience with the book
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/729/original/nc5.jpeg?1701587728"
-          alt="book"
-          width="900"
-        />
-
-        <div>
-          <a href="https://erinmorgenstern.com/" target="_blank">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/732/original/ErinMorgenstern.jpeg?1701587764"
-              alt="author headshot"
-              class="author-headshot"
-            />
-          </a>
-          Visit Erin's Website
+        <hr />
+        <br />
+        <div class="tag-line">My thoughts...</div>
+        <br />
+        <div class="my-thoughts">
+          <span class="emphasis">The Night Circus </span>reinvigorated my love
+          of reading and made me fall deeply in love with the fantasy genre.
           <br />
+          Although it is not <em>"technically"</em> the <em>best book</em> I've
+          ever read, it is by far the most magical with its ethereal writing
+          style transporting you to another place and time while the story is
+          dark, imaginitive and an exquisitely unique masterpiece
+          <span class="my-thoughts-icon">⋆❤⋆</span> <br />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/729/original/nc5.jpeg?1701587728"
+            alt="book"
+            width="900"
+          />
+        </div>
+
+        <div class="more-info">
+          Follow Erin <br />on Instagram →
           <a href="https://www.instagram.com/erinmorgenstern" target="_blank">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/741/original/InstagramIcon.png?1701593513"
@@ -177,8 +229,7 @@
               class="instagram-icon"
             />
           </a>
-          Follow Erin on Instagram
-          <br />
+          The Night Circus <br />on Goodreads →
           <a
             href="https://www.goodreads.com/book/show/13611052-the-night-circus"
             target="_blank"
@@ -189,7 +240,29 @@
               class="goodreads-icon"
             />
           </a>
-          The Night Circus on Goodreads
+          Visit Erin's <br />Website →
+          <a href="https://erinmorgenstern.com/" target="_blank">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/732/original/ErinMorgenstern.jpeg?1701587764"
+              alt="author headshot"
+              class="author-headshot"
+            />
+          </a>
+        </div>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/739/original/nc14.jpeg?1701589968"
+          alt="book covers"
+          class="book-covers"
+        />
+
+        <div class="close">
+          The Night Circus is a number-one national best seller that has been
+          sold around the world and translated into thirty-seven languages with
+          over <span class="emphasis">939,000 ratings</span> and over
+          <span class="emphasis">100,000 reviews</span> on Goodreads. <br />
+          <br /><br />
+          <span class="tag-line">✶ Have you read The Night Circus? ✶</span>
         </div>
       </main>
 
